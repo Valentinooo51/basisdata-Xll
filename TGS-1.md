@@ -51,7 +51,10 @@ Jabatan ENUM('Manager', 'Supervisor', 'Staff'),
     - *NoCab*: Kolom ini menyimpan nomor cabang pegawai dengan tipe data string dan panjang maksimum 255 karakter (VARCHAR(255)).
     - *NOT NULL*: Menandakan bahwa kolom ini harus diisi; nilai kosong (NULL) tidak diperbolehkan.
 
-*HASIL :*![[hasil 2 tabel.png]]
+*HASIL :*
+![](asset/hasil2.png)
+
+
 ## 2. Gunakan perintah SELECT * FROM pegawai; untuk mendapatkan data.
 *STRUKTUR "*
 ```sql
@@ -103,4 +106,6 @@ INSERT INTO pegawai (NIP, NDep, NBlk, JK, Alamat, Telp, Jabatan, Gaji, NoCab) VA
     - Pada baris 10415 untuk Susan Sumantri, kolom Jabatan tidak diisi (''), yang bisa menyebabkan masalah jika kolom Jabatan adalah ENUM dan tidak termasuk nilai kosong. Pastikan kolom Jabatan memiliki nilai yang valid.
     - Jika ada nilai kosong ('') dalam kolom Jabatan, Anda mungkin ingin memperbarui baris ini dengan jabatan yang sesuai, seperti 'Staff', atau menyesuaikan schema tabel untuk mengizinkan nilai kosong jika perlu.
 
-*HASIL :![[hasil 1 tabel 5.png]]
+*HASIL 
+![ ](hasil1.png)
+
